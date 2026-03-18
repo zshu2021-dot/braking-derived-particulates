@@ -135,9 +135,9 @@ def filter_and_subtract_blank(bpm_file, blank_filtered_file, output_file):
 
 if __name__ == "__main__":
     # File paths
-    BPM_file = "D:/Bruker Data/FT-ICR MS data/12-25DATA/neg/1648A-NEG4.csv"
-    blank_filtered_file = "D:/Bruker Data/FT-ICR MS data/12-25DATA/neg/Blank_filtered.csv"
-    output_file = "D:/Bruker Data/FT-ICR MS data/12-25DATA/neg/1648A-NEG4-processed.csv"
+    BPM_file = "D:/Bruker Data/FT-ICR MS data/Example.csv"
+    blank_filtered_file = "D:/Bruker Data/FT-ICR MS data/Blank.csv"
+    output_file = "D:/Bruker Data/FT-ICR MS data/Example-processed.csv"
     
     # Process data
     df_result, common_formulas = filter_and_subtract_blank(BPM_file, blank_filtered_file, output_file)
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     print(df_result.tail(10).to_string())
     
     # Save common molecular formulas list
-    common_formulas_file = "D:/Bruker Data/FT-ICR MS data/12-25DATA/pos/NBPM3-common_formulas.txt"
+    common_formulas_file = "D:/Bruker Data/FT-ICR MS data/Example_formulas.txt"
     with open(common_formulas_file, 'w') as f:
         f.write("List of common molecular formulas between Blank and BPM\n")
         f.write("=" * 80 + "\n")
