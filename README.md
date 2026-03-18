@@ -12,4 +12,4 @@ To run the code, please follow these steps:
 
 ### 3. Example Data
 
-* The file/folder named "Examples" contains the sample data for demonstration.
+* The file/folder named "Example..csv" "Blank.csv" contains the sample data for demonstration.
